@@ -1,0 +1,29 @@
+// ---- Auto-generated: Delete me! ----
+$home-page-code-font: monospace;
+
+.home-page-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  &.is-1-column {
+    flex-direction: column;
+    flex-flow: column;
+  }
+
+  &.is-2-columns {
+    flex-direction: row;
+    flex-flow: row;
+  }
+
+  .home-page-heading {
+    font-size: 20px;
+    color: #3a3939;
+  }
+
+  .home-page-code {
+    font-family: $home-page-code-font;
+  }
+
+}
+// ---- [end] Auto-generated: Delete me! ----
