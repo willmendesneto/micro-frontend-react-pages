@@ -1,17 +1,20 @@
 # home-page 
 
-Microfrontend workshop - Home page component
+Microfrontend workshop - A collection of Page components
 
+> All the page components in a single place.
+
+This will be our first step in the workshop. After that we can refactor, improve and decouple our code.
 
 ## Usage
 
 ```bash
-yarn add home-page
+yarn add micro-frontend-react-pages
 # or 
-npm install home-page
+npm install micro-frontend-react-pages
 ```
 
-For more details, see [`src/js/components/home-page.js`](./src/js/components/home-page.js)
+For more details, see [`src/js/export.js`](./src/js/export.js)
 
 
 ## Code Architecture

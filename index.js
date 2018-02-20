@@ -1,7 +1,11 @@
 import { storiesOf } from 'storybook-react'
 
-import HomePage from './src/js/export'
+import { HomePage, ListingItemsPage, DocsPage } from './src/js/export'
 
 storiesOf('HomePage', module)
-  .add('1 Column', () => <HomePage type={'1-column'} />)
-  .add('2 Columns', () => <HomePage type={'2-columns'} />)
+  .add('Page view', () => <HomePage type={'1-column'} />)
+storiesOf('ListingItemsPage', module)
+  .add('Page view without items', () => <ListingItemsPage type={'1-column'} items={[]} />)
+  .add('Page view with items', () => <ListingItemsPage type={'1-column'} />)
+storiesOf('DocsPage', module)
+  .add('Page view', () => <DocsPage />)

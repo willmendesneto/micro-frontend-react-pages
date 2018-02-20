@@ -1,0 +1,63 @@
+@import 'helpers/_include-media';
+
+.first-section {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  height: 350px;
+  text-decoration: none solid rgb(255, 255, 255);
+  width: 100%;
+  column-rule-color: rgb(255, 255, 255);
+  perspective-origin: 720px 228px;
+  transform-origin: 720px 228px;
+  border: 0px none rgb(255, 255, 255);
+  padding: 112px 0px;
+  margin-top: 26px;
+  position: relative;
+
+  &:before {
+    background: linear-gradient(to right, #0389ff, #0dd3ff);
+    content: '';
+    top: 0;
+    transform: skewY(10deg);
+    transform-origin: top right;
+    display: block;
+    height: 600px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .first-section-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+
+    @include media('>=tablet') {
+      width: 500px;
+    }
+
+    @include media('>=desktop') {
+      width: 900px;
+    }
+  }
+
+  .first-section-title {
+    color: rgb(255, 255, 255);
+    height: 56px;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include media('>=tablet') {
+      font-size: 50px;
+      font-weight: 100;
+      line-height: 65px;
+    }
+  }
+
+  .first-section-description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+

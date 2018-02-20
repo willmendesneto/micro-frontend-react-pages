@@ -30,3 +30,8 @@ temp
 
 # ignore inline compiling
 /logs
+
+
+# Next/Now folders
+.next
+out

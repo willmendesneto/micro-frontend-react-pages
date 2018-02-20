@@ -1,3 +1,5 @@
 import HomePage from './components/home-page'
+import ListingItemsPage from './components/list-items-page'
+import DocsPage from './components/docs-page'
 
-export default HomePage
+export { HomePage, ListingItemsPage, DocsPage }

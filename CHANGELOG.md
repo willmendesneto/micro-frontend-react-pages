@@ -6,4 +6,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 ### Added
+- Adding page components into the repository
 - Created home-page
