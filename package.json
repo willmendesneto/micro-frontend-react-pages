@@ -37,7 +37,6 @@
     "css-modules-require-hook": "^4.2.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "generator-poi-boilerplate-demo": "^1.2.0",
     "gh-pages": "^1.1.0",
     "http-server": "^0.10.0",
     "jsdom": "^11.5.1",
@@ -52,6 +51,7 @@
     "storybook-react": "^3.2.16"
   },
   "dependencies": {
+    "generator-poi-boilerplate-demo": "^1.2.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
