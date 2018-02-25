@@ -8,3 +8,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Adding page components into the repository
 - Created home-page
+- Moving `generator-poi-boilerplate-demo` to dev deps
+- Adding page styles
