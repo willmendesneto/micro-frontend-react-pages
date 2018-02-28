@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [0.0.4][] - 2018-02-28
 ### Added
 - Adding page components into the repository
 - Created home-page
@@ -13,3 +15,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Using `prop-types` to check component props
 - Adding `.travis.yml` integration
 - Adding `CHANGELOG.md` validation
+
+[Unreleased]: https://github.com/willmendesneto/micro-frontend-react-pages/compare/v0.0.4...HEAD
+[0.0.4]: https://github.com/willmendesneto/micro-frontend-react-pages/tree/v0.0.4
