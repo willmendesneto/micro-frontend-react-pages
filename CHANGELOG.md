@@ -11,3 +11,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Moving `generator-poi-boilerplate-demo` to dev deps
 - Adding page styles
 - Using `prop-types` to check component props
+- Adding `.travis.yml` integration
+- Adding `CHANGELOG.md` validation
