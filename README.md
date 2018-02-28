@@ -1,5 +1,7 @@
 # home-page 
 
+[![Build Status](https://travis-ci.org/willmendesneto/micrmicro-frontend-react-pages.svg?branch=master)](https://travis-ci.org/willmendesneto/micrmicro-frontend-react-pages)
+
 Microfrontend workshop - A collection of Page components
 
 > All the page components in a single place.
