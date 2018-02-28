@@ -7,8 +7,14 @@ describe('list-items-page.js', () => {
   let wrapper
 
   before(() => {
+
+    const defaultItems = [
+      { image: 'https://loremflickr.com/250/200/cat', title: 'title 1', description: 'description 1' },
+      { image: 'https://loremflickr.com/250/200/nature', title: 'title 2', description: 'description 2' },
+      { image: 'https://loremflickr.com/250/200/house', title: 'title 3', description: 'description 3' },
+    ]
     wrapper = shallow(
-      <ListItemsPage />
+      <ListItemsPage items={defaultItems} categoryName={'Category'}/>
     )
   })
 
@@ -21,7 +27,7 @@ describe('list-items-page.js', () => {
   })
 
   it('should renders the docs section title', () => {
-    expect(wrapper.find('.home-page-heading').text()).to.eql('Cats')
+    expect(wrapper.find('.home-page-heading').text()).to.eql('Category')
   })
 
   it('should renders the product items', () => {
@@ -30,7 +36,7 @@ describe('list-items-page.js', () => {
 
   it('should renders default message if there are no items for that category', () => {
     const node = shallow(
-      <ListItemsPage items={[]} />
+      <ListItemsPage categoryName={'Category'} />
     )
     expect(node.find('.product-list-item').length).to.eql(0)
     expect(node.find('.home-page-wrapper').text()).to.contain('No items for this category :(')

@@ -7,11 +7,11 @@ import Header from './header'
 import Footer from './footer'
 import FirstSection from './first-section'
 
-const HomePage = ({ type }) => (
+const HomePage = () => (
   <Fragment>
     <Header />
     <FirstSection />
-    <section className={`home-page-wrapper is-${type}`}>
+    <section className={`home-page-wrapper is-1-column`}>
       <h1 className="home-page-heading">
         <p>This is your `<code className="home-page-code">home-page</code>` component</p>
       </h1>

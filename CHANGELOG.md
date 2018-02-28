@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Created home-page
 - Moving `generator-poi-boilerplate-demo` to dev deps
 - Adding page styles
+- Using `prop-types` to check component props

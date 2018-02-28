@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 import { HowToStart } from 'generator-poi-boilerplate-demo'
 
 import '../../scss/styles.scss'
@@ -8,13 +9,7 @@ import Header from './header'
 import Footer from './footer'
 import FirstSection from './first-section'
 
-const defaultItems = [
-  { image: 'https://loremflickr.com/250/200/cat', title: 'title 1', description: 'description 1' },
-  { image: 'https://loremflickr.com/250/200/cat', title: 'title 2', description: 'description 2' },
-  { image: 'https://loremflickr.com/250/200/cat', title: 'title 3', description: 'description 3' },
-]
-
-const ListItemsPage = ({ items = defaultItems }) => {
+const ListItemsPage = ({ items, categoryName }) => {
   const listItems = items.map(({ image, title, description }) => (
     <li className={'product-list-item'} key={image}>
       <a href="#" className={'product-list-link'}>
@@ -32,7 +27,7 @@ const ListItemsPage = ({ items = defaultItems }) => {
       <Header />
       <FirstSection title={'Products Page'} description={'What do you want to check it out?'} />
       <section className={`home-page-wrapper is-1-column`}>
-        <h1 className="home-page-heading">Cats</h1>
+        <h1 className="home-page-heading">{categoryName}</h1>
         {
           !!listItems.length ?
             <ul className={'product-list'}>{listItems}</ul> :
@@ -42,6 +37,21 @@ const ListItemsPage = ({ items = defaultItems }) => {
       <Footer />
     </Fragment>
   )
+}
+
+ListItemsPage.propTypes = {
+  categoryName: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+}
+
+ListItemsPage.defaultProps = {
+  items: [],
+  categoryName: '',
 }
 
 export default ListItemsPage
