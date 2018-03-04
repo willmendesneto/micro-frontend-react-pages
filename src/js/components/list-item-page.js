@@ -24,6 +24,7 @@ const ListItemPage = ({ item, categoryName }) => {
             </div>
           ) : <p>Oops! This item is not available :/</p> }
         <a href="/items">Back to List</a>
+        <a href="/checkout">Buy this item</a>
       </section>
       <Footer />
     </Fragment>

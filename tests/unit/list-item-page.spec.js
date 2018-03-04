@@ -3,7 +3,7 @@ import { expect } from 'chai'
 import { shallow } from 'enzyme'
 import ListItemPage from '../../src/js/components/list-item-page'
 
-describe('list-items-page.js', () => {
+describe('list-item-page.js', () => {
   let wrapper
 
   before(() => {

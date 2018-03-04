@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Added
+- New list item component
+- new checkout page component
 
 ## [0.0.4][] - 2018-02-28
 ### Added

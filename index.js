@@ -1,6 +1,12 @@
 import { storiesOf } from 'storybook-react'
 
-import { HomePage, ListingItemsPage, ListingItemPage, DocsPage } from './src/js/export'
+import {
+  HomePage,
+  ListingItemsPage,
+  ListingItemPage,
+  DocsPage,
+  CheckoutPage
+} from './src/js/export'
 
 storiesOf('HomePage', module)
   .add('Page view', () => <HomePage />)
@@ -28,3 +34,6 @@ storiesOf('ListingItemPage', module)
   .add('Page view without item', () => <ListingItemPage />)
 storiesOf('DocsPage', module)
   .add('Page view', () => <DocsPage />)
+
+storiesOf('CheckoutPage', module)
+  .add('Page view', () => <CheckoutPage />)
