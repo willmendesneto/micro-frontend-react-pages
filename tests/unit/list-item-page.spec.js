@@ -1,20 +1,16 @@
 import React from 'react'
 import { expect } from 'chai'
 import { shallow } from 'enzyme'
-import ListItemsPage from '../../src/js/components/list-items-page'
+import ListItemPage from '../../src/js/components/list-item-page'
 
 describe('list-items-page.js', () => {
   let wrapper
 
   before(() => {
 
-    const defaultItems = [
-      { image: 'https://loremflickr.com/250/200/cat', title: 'title 1', description: 'description 1' },
-      { image: 'https://loremflickr.com/250/200/nature', title: 'title 2', description: 'description 2' },
-      { image: 'https://loremflickr.com/250/200/house', title: 'title 3', description: 'description 3' },
-    ]
+    const defaultItem = { image: 'https://loremflickr.com/250/200/cat', title: 'title 1', description: 'description 1' };
     wrapper = shallow(
-      <ListItemsPage items={defaultItems} categoryName={'Category'}/>
+      <ListItemPage item={defaultItem} categoryName={'Category'}/>
     )
   })
 
@@ -31,17 +27,18 @@ describe('list-items-page.js', () => {
   })
 
   it('should renders the product items', () => {
-    expect(wrapper.find('.product-list-item').length).to.eql(3)
+    expect(wrapper.find('.product-list-info').length).to.eql(1)
   })
 
   it('should renders default message if there are no items for that category', () => {
     const node = shallow(
-      <ListItemsPage categoryName={'Category'} />
+      <ListItemPage categoryName={'Category'} />
     )
-    expect(node.find('.product-list-item').length).to.eql(0)
-    expect(node.find('.home-page-wrapper').text()).to.contain('No items for this category :(')
+    expect(node.find('.product-list-info').length).to.eql(0)
+    expect(node.find('.home-page-wrapper').text()).to.contain('Oops! This item is not available :/')
   })
-  it('should renders the list items footer', () => {
+
+  it('should renders the list item footer', () => {
     expect(wrapper.find('Footer').length).to.eql(1)
   })
 })

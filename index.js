@@ -1,6 +1,6 @@
 import { storiesOf } from 'storybook-react'
 
-import { HomePage, ListingItemsPage, DocsPage } from './src/js/export'
+import { HomePage, ListingItemsPage, ListingItemPage, DocsPage } from './src/js/export'
 
 storiesOf('HomePage', module)
   .add('Page view', () => <HomePage />)
@@ -15,5 +15,16 @@ storiesOf('ListingItemsPage', module)
         { image: 'https://loremflickr.com/250/200/house', title: 'title 3', description: 'description 3' },
       ]}
     />)
+storiesOf('ListingItemPage', module)
+  .add('Page view', () =>
+    <ListingItemPage
+      item={{
+        categoryName: 'My Category',
+        image: 'https://loremflickr.com/250/200/cat',
+        title: 'title 1',
+        description: 'description 1',
+      }}
+    />)
+  .add('Page view without item', () => <ListingItemPage />)
 storiesOf('DocsPage', module)
   .add('Page view', () => <DocsPage />)

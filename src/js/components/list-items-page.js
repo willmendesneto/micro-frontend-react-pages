@@ -10,9 +10,9 @@ import Footer from './footer'
 import FirstSection from './first-section'
 
 const ListItemsPage = ({ items, categoryName }) => {
-  const listItems = items.map(({ image, title, description }) => (
+  const listItems = items.map(({ image, title, description }, index) => (
     <li className={'product-list-item'} key={image}>
-      <a href="#" className={'product-list-link'}>
+      <a href={`/items/${index}`} className={'product-list-link'}>
         <img className={'produc-list-image'} src={image} />
         <div className="product-list-info">
           <p>{title}</p>

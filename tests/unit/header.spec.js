@@ -13,6 +13,6 @@ describe('header.js', () => {
   })
 
   it('should renders the component', () => {
-    expect(wrapper.find('.home-page-menu-item').length).to.eql(2)
+    expect(wrapper.find('.home-page-menu-item').length).to.eql(3)
   })
 })
