@@ -1,6 +1,6 @@
 {
   "name": "micro-frontend-react-pages",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "generatorVersion": "3.0.1",
   "description": "Microfrontend workshop - A collection of Page components",
   "main": "dist/client.js",
