@@ -1,6 +1,6 @@
-# home-page 
+# Micro Frontend React Pages 
 
-[![Build Status](https://travis-ci.org/willmendesneto/micrmicro-frontend-react-pages.svg?branch=master)](https://travis-ci.org/willmendesneto/micrmicro-frontend-react-pages)
+[![Build Status](https://travis-ci.org/willmendesneto/micro-frontend-react-pages.svg?branch=master)](https://travis-ci.org/willmendesneto/micro-frontend-react-pages)
 
 Microfrontend workshop - A collection of Page components
 
