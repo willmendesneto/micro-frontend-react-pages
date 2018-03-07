@@ -26,6 +26,13 @@ docs](https://github.com/willmendesneto/generator-poi/tree/v3.0.1#code-architect
 for info on the repo layout, structure and meaning.
 
 
+## Demo
+
+You can check the demo page with all the components and states acessing 
+
+https://willmendesneto.github.io/micro-frontend-react-pages/
+
+
 ## Publishing the package
 
 This project is using `np` as publisher helper. For more information, please check [`np` documentation](https://github.com/sindresorhus/np#readme)
